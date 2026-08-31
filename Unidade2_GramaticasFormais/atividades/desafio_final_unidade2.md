@@ -1,43 +1,108 @@
-# Desafio final
+Desafio final
+Gramática:
 
-Considere:
+G
+:
+{
+S
+→
+a
+S
+S
+→
+b
 
-$$
-G:
-\begin{cases}
-S\rightarrow aS\
-S\rightarrow b
-\end{cases}
-$$
+A palavra b pode ser gerada?
+Sim.
+S
+→
+b
 
-Responda sem consultar o gabarito:
+A palavra ab pode ser gerada?
+Sim.
+S
+→
+a
+S
+→
+a
+b
 
-### 1.
+A palavra aab pode ser gerada?
+Sim.
+S
+→
+a
+S
+→
+a
+a
+S
+→
+a
+a
+b
 
-A palavra `b` pode ser gerada?
+A palavra aaab pode ser gerada?
+Sim.
+S
+→
+a
+S
+→
+a
+a
+S
+→
+a
+a
+a
+S
+→
+a
+a
+a
+b
 
-### 2.
+A palavra aba pode ser gerada?
+Não.
+A gramática sempre termina com b, portanto não é possível gerar uma palavra que termine em a.
 
-A palavra `ab` pode ser gerada?
+Derivação completa de aaaab:
 
-### 3.
+S
+→
+a
+S
+→
+a
+a
+S
+→
+a
+a
+a
+S
+→
+a
+a
+a
+a
+S
+→
+a
+a
+a
+a
+b
 
-A palavra `aab` pode ser gerada?
+Padrão das palavras geradas:
+A gramática gera uma ou mais letras a, seguidas de um b. Portanto:
 
-### 4.
+L(G) ={a^n b | n ≥ 0}
 
-A palavra `aaab` pode ser gerada?
+Exemplos:
 
-### 5.
+b, ab, aab, aaab, aaaab, ...
 
-A palavra `aba` pode ser gerada?
-
-### 6.
-
-Escreva a derivação completa de `aaaab`.
-
-### 7.
-
-Descreva, com suas palavras, o padrão das palavras geradas por essa gramática.
-
-> **Dica:** observe o que acontece quando aplicamos várias vezes $S\rightarrow aS$ e, finalmente, utilizamos $S\rightarrow b$.
+Em palavras simples: podemos repetir a quantas vezes quisermos e, no final, precisamos colocar exatamente um b.
