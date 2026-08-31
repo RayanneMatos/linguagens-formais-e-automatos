@@ -50,7 +50,7 @@ Exemplo: S → aS.
 Lê-se: “S pode ser substituído por aS ou por ε.”
 O símbolo | significa “ou”.
 
-* omo gerar palavras usando uma gramática?
+* Como gerar palavras usando uma gramática?
 Começamos pelo símbolo inicial e aplicamos as regras de produção até não haver mais não terminais.
 
         Exemplo:
