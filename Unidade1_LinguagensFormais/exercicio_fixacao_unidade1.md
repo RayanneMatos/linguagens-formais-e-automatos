@@ -46,7 +46,7 @@ O que é uma regra de produção?
 É uma regra que indica como substituir um símbolo por outros símbolos.
 Exemplo: S → aS.
 
-* omo ler S → aS | ε?
+* Como ler S → aS | ε?
 Lê-se: “S pode ser substituído por aS ou por ε.”
 O símbolo | significa “ou”.
 
